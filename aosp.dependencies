@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "github",
+    "repository": "rohanpurohit/proprietary_vendor_asus",
+    "target_path": "vendor/asus",
+    "branch": "lineage-16.0"
+  },
+  {
+    "remote": "github",
+    "repository": "AruAA/android_kernel_asus_sdm845-ten",
+    "target_path": "kernel/asus/sdm845",
+    "branch": "lineage-17.0"
+  }
+]

@@ -51,6 +51,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AntHalService
 
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+	
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -147,8 +150,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
 
 # Power
 PRODUCT_PACKAGES += \
@@ -176,12 +177,12 @@ PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
 # Trust HAL
-PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
+#PRODUCT_PACKAGES += \
+#    lineage.trust@1.0-service
 
 # Touch
-PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.asus_Z01R
+#PRODUCT_PACKAGES += \
+#    lineage.touch@1.0-service.asus_Z01R
 
 # Update engine
 PRODUCT_PACKAGES += \
