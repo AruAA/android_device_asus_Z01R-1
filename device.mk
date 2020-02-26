@@ -154,7 +154,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-evolution
 
 
 # Power
@@ -194,9 +194,9 @@ PRODUCT_BOOT_JARS += \
 #PRODUCT_PACKAGES += \
 #    lineage.trust@1.0-service
 
-# Touch
-#PRODUCT_PACKAGES += \
-#    lineage.touch@1.0-service.asus_Z01R
+# Touch HIDL
+PRODUCT_PACKAGES += \
+    lineage.touch@1.0-service.asus_Z01R
 
 # Update engine
 PRODUCT_PACKAGES += \
