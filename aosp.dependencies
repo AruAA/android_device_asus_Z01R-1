@@ -1,13 +1,13 @@
 [
   {
     "remote": "github",
-    "repository": "rohanpurohit/proprietary_vendor_asus",
+    "repository": "BlissRoms-Devices/proprietary_vendor_asus",
     "target_path": "vendor/asus",
-    "branch": "lineage-16.0"
+    "branch": "q"
   },
   {
     "remote": "github",
-    "repository": "AruAA/android_kernel_asus_sdm845-ten",
+    "repository": "BlissRoms-Devices/android_kernel_asus_sdm845",
     "target_path": "kernel/asus/sdm845",
     "branch": "q"
   },
