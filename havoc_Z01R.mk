@@ -22,20 +22,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 # Inherit from Z01R device
 $(call inherit-product, device/asus/Z01R/device.mk)
 
-# Inherit some common EvoX-ify stuff.
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BOOT_ANIMATION_RES_EVO := true
-TARGET_GAPPS_ARCH := arm64
-CUSTOM_BUILD_TYPE := OFFICIAL
+# Inherit some common havoc stuff.
+#TARGET_GAPPS_ARCH := arm64
+CUSTOM_BUILD_TYPE := UNOFFICIAL
 TARGET_INCLUDE_STOCK_ARCORE := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 TARGET_INCLUDE_WIFI_EXT := true
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := Z01R
 PRODUCT_MANUFACTURER := asus
 PRODUCT_MODEL := Zenfone 5Z
-PRODUCT_NAME := aosp_Z01R
+PRODUCT_NAME := havoc_Z01R
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
@@ -47,4 +45,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=Z01R \
     PRIVATE_BUILD_DESC="Z01R-user 9 PPR1.180610.009 WW_user_90.11.162.88_20190723 release-keys"
 
-BUILD_FINGERPRINT := asus/WW_Z01R/Z01R:10/QKQ1.191008.001/100.10.107.36:user/release-keys
+#BUILD_FINGERPRINT := asus/WW_Z01R/Z01R:10/QKQ1.191008.001/100.10.107.36:user/release-keys
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ1B.200205.002/6084387:user/release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.havoc.maintainer=Aryan Arora

@@ -59,5 +59,4 @@ void vendor_load_properties()
 	property_override("ro.product.device", "ASUS_Z01R_1");
     property_override("ro.build.description", "Z01R-user 9 PPR1.180610.009 WW_user_90.11.162.88_20190723 release-keys");
     property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ1B.200205.002/6084387:user/release-keys");
-	property_override("ro.apex.updatable", "true");
 }

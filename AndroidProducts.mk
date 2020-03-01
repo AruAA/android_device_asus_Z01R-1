@@ -15,4 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_Z01R.mk
+    $(LOCAL_DIR)/havoc_Z01R.mk
+	
+COMMON_LUNCH_CHOICES := \
+    havoc_Z01R-user \
+    havoc_Z01R-userdebug \
+    havoc_Z01R-eng
